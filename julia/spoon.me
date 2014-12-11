@@ -6,8 +6,8 @@ workdir C:\
 cmd wget http://s3.amazonaws.com/julialang/bin/winnt/x86/0.3/julia-0.3.3-win32.exe
 cmd julia-0.3.3-win32.exe /S "/D=C:\julia-0.3.3"
 
-# start julia prompt by default
-startup file ("C:\julia-0.3.3\julia.lnk")
+# add julia to path
+env path=C:\julia-0.3.3\bin
 
 # cleanup
 cmd del C:\julia-0.3.3-win32.exe /Q
